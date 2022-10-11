@@ -1,0 +1,8 @@
+---
+- name: for test run
+  gather_facts: true
+  hosts: all
+
+  task:
+    - name: Helo Word!
+      shell: echo "Hello, it working"
