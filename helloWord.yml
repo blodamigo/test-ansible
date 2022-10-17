@@ -5,3 +5,6 @@
   tasks:
     - name: Helo Word!
       shell: echo "Hello, it working"
+      register: shellOutput
+    - debug:
+      msg: System {{ shellOutput }}
