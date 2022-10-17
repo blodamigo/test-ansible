@@ -6,6 +6,5 @@
     - name: Helo Word!
       shell: echo "Hello, it working"
       register: shell_result
-
-    - ansible.builtin.debug:
-      var: shell_result
+      debug:
+        var: shell_result
