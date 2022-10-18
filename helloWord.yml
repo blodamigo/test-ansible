@@ -4,7 +4,9 @@
 
   tasks:
     - name: Helo Word!
-      shell: echo "Hello, it working"
+      shell: |
+        echo "Hello, it working"
+        hostname
       register: shell_result
     
     - debug:
